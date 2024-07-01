@@ -1,0 +1,17 @@
+C:/Users/tromb/STM32CubeIDE/blackpill/lv9/Middlewares/Third_Party/lvgl/src/core/../misc/../font/../draw/../misc/lv_color.h:212:23:lv_color_format_get_size	16	static
+../Core/Src/main.c:74:5:_write	24	static
+../Core/Src/main.c:84:5:main	72	static
+../Core/Src/main.c:163:6:SystemClock_Config	88	static
+../Core/Src/main.c:209:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:247:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:278:13:MX_DMA_Init	16	static
+../Core/Src/main.c:296:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:340:6:lcd_color_transfer_ready_cb	16	static
+../Core/Src/main.c:349:16:lcd_io_init	8	static
+../Core/Src/main.c:367:13:lcd_send_cmd	24	static
+../Core/Src/main.c:392:13:lcd_send_color	24	static
+../Core/Src/main.c:417:6:LVGL_Task	40	static
+../Core/Src/main.c:461:6:ui_init	16	static
+../Core/Src/main.c:489:6:StartDefaultTask	16	static
+../Core/Src/main.c:508:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:525:6:Error_Handler	4	static,ignoring_inline_asm

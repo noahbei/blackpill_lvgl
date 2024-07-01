@@ -1,0 +1,5 @@
+../Middlewares/Third_Party/lvgl/src/drivers/display/st7735/lv_st7735.c:81:16:lv_st7735_create	1
+../Middlewares/Third_Party/lvgl/src/drivers/display/st7735/lv_st7735.c:89:6:lv_st7735_set_gap	1
+../Middlewares/Third_Party/lvgl/src/drivers/display/st7735/lv_st7735.c:94:6:lv_st7735_set_invert	1
+../Middlewares/Third_Party/lvgl/src/drivers/display/st7735/lv_st7735.c:99:6:lv_st7735_set_gamma_curve	1
+../Middlewares/Third_Party/lvgl/src/drivers/display/st7735/lv_st7735.c:104:6:lv_st7735_send_cmd_list	1

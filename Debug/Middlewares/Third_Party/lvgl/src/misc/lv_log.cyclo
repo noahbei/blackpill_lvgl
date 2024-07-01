@@ -1,0 +1,3 @@
+../Middlewares/Third_Party/lvgl/src/misc/lv_log.c:68:6:lv_log_register_print_cb	1
+../Middlewares/Third_Party/lvgl/src/misc/lv_log.c:73:6:_lv_log_add	6
+../Middlewares/Third_Party/lvgl/src/misc/lv_log.c:123:6:lv_log	1
