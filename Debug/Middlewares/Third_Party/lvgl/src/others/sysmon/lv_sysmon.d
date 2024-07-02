@@ -128,7 +128,53 @@ Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.o: \
  ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/../indev/../misc/lv_area.h \
  ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/../indev/../misc/lv_timer.h \
  ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/../indev/../misc/lv_event.h \
- ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/lv_group.h
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/lv_group.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/lv_global.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../lv_conf_internal.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_types.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/lv_draw.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/lv_draw_sw.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../lv_draw.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../misc/lv_area.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../misc/lv_color.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../display/lv_display.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../osal/lv_os.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../draw/lv_draw_vector.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../draw/lv_draw.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../draw/../misc/lv_array.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/lv_draw_sw_blend.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../lv_draw_sw_mask.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_area.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_color.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_math.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_color.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_area.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_style.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_anim.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_area.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_color_op.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_ll.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_log.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_profiler_builtin.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/../lv_conf_internal.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_style.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_timer.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../others/sysmon/lv_sysmon.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/lv_tlsf.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/../../lv_conf_internal.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/../../osal/lv_os.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/../../misc/lv_ll.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../tick/lv_tick.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../layouts/lv_layout.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../misc/lv_async.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../stdlib/lv_string.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/lv_label.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../lv_conf_internal.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../core/lv_obj.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../font/lv_font.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../font/lv_symbol_def.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../misc/lv_text.h \
+ ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../draw/lv_draw.h
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.h:
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../misc/lv_timer.h:
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../misc/../lv_conf_internal.h:
@@ -258,3 +304,49 @@ Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.o: \
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/../indev/../misc/lv_timer.h:
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/../indev/../misc/lv_event.h:
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/lv_group.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/lv_global.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../lv_conf_internal.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_types.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/lv_draw.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/lv_draw_sw.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../lv_draw.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../misc/lv_area.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../misc/lv_color.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../display/lv_display.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../osal/lv_os.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../draw/lv_draw_vector.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../draw/lv_draw.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/../../draw/../misc/lv_array.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/lv_draw_sw_blend.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../lv_draw_sw_mask.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_area.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_color.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_math.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_color.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_area.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../draw/sw/blend/../../../misc/lv_style.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_anim.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_area.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_color_op.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_ll.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_log.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_profiler_builtin.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/../lv_conf_internal.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_style.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../misc/lv_timer.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../others/sysmon/lv_sysmon.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/lv_tlsf.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/../../lv_conf_internal.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/../../osal/lv_os.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../stdlib/builtin/../../misc/lv_ll.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../tick/lv_tick.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../core/../layouts/lv_layout.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../misc/lv_async.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../stdlib/lv_string.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/lv_label.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../lv_conf_internal.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../core/lv_obj.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../font/lv_font.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../font/lv_symbol_def.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../misc/lv_text.h:
+../Middlewares/Third_Party/lvgl/src/others/sysmon/../../widgets/label/../../draw/lv_draw.h:
