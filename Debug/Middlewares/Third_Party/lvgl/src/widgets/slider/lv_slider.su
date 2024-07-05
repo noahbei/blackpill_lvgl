@@ -12,7 +12,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.h:133:23:lv_slider_get_left_value	16	static
 ../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.h:170:32:lv_slider_get_mode	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.h:183:20:lv_slider_is_symmetrical	16	static
-../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.c:66:12:lv_slider_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.c:66:12:lv_slider_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.c:74:6:lv_slider_is_dragged	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.c:86:13:lv_slider_constructor	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/slider/lv_slider.c:102:13:lv_slider_event	112	static

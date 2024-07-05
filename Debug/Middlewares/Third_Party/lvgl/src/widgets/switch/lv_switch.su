@@ -11,7 +11,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/switch/../../core/lv_obj_style_gen.h:160:23:lv_obj_get_style_pad_right	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/switch/../../core/lv_obj_style_gen.h:610:24:lv_obj_get_style_anim_duration	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/switch/../../core/lv_obj_style_gen.h:634:29:lv_obj_get_style_base_dir	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/switch/lv_switch.c:73:12:lv_switch_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/switch/lv_switch.c:73:12:lv_switch_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/switch/lv_switch.c:85:13:lv_switch_constructor	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/switch/lv_switch.c:101:13:lv_switch_destructor	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/switch/lv_switch.c:109:13:lv_switch_event	56	static

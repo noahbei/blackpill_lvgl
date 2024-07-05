@@ -27,7 +27,7 @@
 ../Middlewares/Third_Party/lvgl/src/core/lv_obj_style_gen.h:574:20:lv_obj_get_style_clip_corner	24	static
 ../Middlewares/Third_Party/lvgl/src/core/lv_obj_style_gen.h:580:24:lv_obj_get_style_opa	24	static
 ../Middlewares/Third_Party/lvgl/src/core/lv_obj_style_gen.h:628:24:lv_obj_get_style_layout	24	static
-../Middlewares/Third_Party/lvgl/src/core/lv_obj.c:98:12:lv_obj_create	32	static
+../Middlewares/Third_Party/lvgl/src/core/lv_obj.c:98:12:lv_obj_create	24	static
 ../Middlewares/Third_Party/lvgl/src/core/lv_obj.c:114:6:lv_obj_add_flag	64	static
 ../Middlewares/Third_Party/lvgl/src/core/lv_obj.c:151:6:lv_obj_remove_flag	56	static
 ../Middlewares/Third_Party/lvgl/src/core/lv_obj.c:179:6:lv_obj_update_flag	24	static

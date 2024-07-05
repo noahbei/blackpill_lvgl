@@ -1,4 +1,4 @@
-../Middlewares/Third_Party/lvgl/src/widgets/spinbox/lv_spinbox.c:55:12:lv_spinbox_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/spinbox/lv_spinbox.c:55:12:lv_spinbox_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/spinbox/lv_spinbox.c:67:6:lv_spinbox_set_value	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/spinbox/lv_spinbox.c:80:6:lv_spinbox_set_rollover	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/spinbox/lv_spinbox.c:88:6:lv_spinbox_set_digit_format	64	static

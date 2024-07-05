@@ -9,7 +9,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/../../core/lv_obj_style_gen.h:538:33:lv_obj_get_style_text_font	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/../../core/lv_obj_style_gen.h:550:23:lv_obj_get_style_text_line_space	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/../../core/lv_obj_style_gen.h:634:29:lv_obj_get_style_base_dir	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:94:12:lv_dropdown_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:94:12:lv_dropdown_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:106:6:lv_dropdown_set_text	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:117:6:lv_dropdown_set_options	40	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:164:6:lv_dropdown_set_options_static	32	static
@@ -32,7 +32,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:453:6:lv_dropdown_open	80	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:551:6:lv_dropdown_close	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:564:6:lv_dropdown_is_open	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:576:19:lv_dropdown_list_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:576:19:lv_dropdown_list_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:584:13:lv_dropdown_constructor	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:616:13:lv_dropdown_destructor	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/dropdown/lv_dropdown.c:632:13:lv_dropdownlist_constructor	16	static

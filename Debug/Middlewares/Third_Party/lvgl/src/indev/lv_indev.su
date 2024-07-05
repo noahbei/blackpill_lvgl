@@ -57,10 +57,10 @@
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:576:10:lv_indev_remove_event_cb_with_user_data	48	static
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:595:13:lv_indev_send_event	56	static
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:623:13:indev_pointer_proc	40	static
-../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:679:13:indev_keypad_proc	40	static
-../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:824:13:indev_encoder_proc	48	static
-../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1048:13:indev_button_proc	40	static
-../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1095:13:indev_proc_press	56	static
+../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:679:13:indev_keypad_proc	32	static
+../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:824:13:indev_encoder_proc	40	static
+../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1048:13:indev_button_proc	32	static
+../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1095:13:indev_proc_press	40	static
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1238:13:indev_proc_release	72	static
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1317:19:pointer_search_obj	16	static
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1340:13:indev_proc_reset_query_handler	16	static

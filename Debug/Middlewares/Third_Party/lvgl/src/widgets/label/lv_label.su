@@ -21,7 +21,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/label/../../core/lv_obj_style_gen.h:550:23:lv_obj_get_style_text_line_space	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/label/../../core/lv_obj_style_gen.h:604:33:lv_obj_get_style_anim	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/label/../../core/lv_obj_style_gen.h:610:24:lv_obj_get_style_anim_duration	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/label/lv_label.c:81:12:lv_label_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/label/lv_label.c:81:12:lv_label_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/label/lv_label.c:93:6:lv_label_set_text	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/label/lv_label.c:136:6:lv_label_set_text_fmt	36	static
 ../Middlewares/Third_Party/lvgl/src/widgets/label/lv_label.c:164:6:lv_label_set_text_static	24	static

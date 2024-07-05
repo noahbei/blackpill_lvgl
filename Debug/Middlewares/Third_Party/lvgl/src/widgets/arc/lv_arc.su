@@ -11,7 +11,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/arc/../../core/lv_obj_style_gen.h:392:23:lv_obj_get_style_shadow_spread	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/arc/../../core/lv_obj_style_gen.h:484:23:lv_obj_get_style_arc_width	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/arc/../../core/lv_obj_style_gen.h:490:20:lv_obj_get_style_arc_rounded	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/arc/lv_arc.c:70:12:lv_arc_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/arc/lv_arc.c:70:12:lv_arc_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/arc/lv_arc.c:90:6:lv_arc_set_start_angle	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/arc/lv_arc.c:114:6:lv_arc_set_end_angle	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/arc/lv_arc.c:137:6:lv_arc_set_angles	24	static

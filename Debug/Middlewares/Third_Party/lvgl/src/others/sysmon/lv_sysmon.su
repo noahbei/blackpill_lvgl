@@ -7,7 +7,7 @@
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/../../others/observer/../../core/lv_obj_style.h:241:20:lv_obj_set_style_pad_all	24	static
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:72:6:_lv_sysmon_builtin_init	8	static
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:89:6:_lv_sysmon_builtin_deinit	8	static
-../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:97:12:lv_sysmon_create	40	static
+../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:97:12:lv_sysmon_create	32	static
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:115:13:perf_monitor_disp_event_cb	24	static
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:149:13:perf_update_timer_cb	96	static
 ../Middlewares/Third_Party/lvgl/src/others/sysmon/lv_sysmon.c:183:13:perf_observer_cb	48	static

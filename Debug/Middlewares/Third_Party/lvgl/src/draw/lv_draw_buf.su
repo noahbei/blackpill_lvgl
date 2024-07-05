@@ -15,7 +15,7 @@
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:150:13:lv_draw_buf_init	40	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:174:17:lv_draw_buf_create	64	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:204:17:lv_draw_buf_dup	32	static
-../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:221:17:lv_draw_buf_reshape	40	static
+../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:221:17:lv_draw_buf_reshape	32	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:245:6:lv_draw_buf_destroy	24	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:259:8:lv_draw_buf_goto_xy	40	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw_buf.c:273:17:lv_draw_buf_adjust_stride	56	static

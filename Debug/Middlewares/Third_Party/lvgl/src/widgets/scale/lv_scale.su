@@ -18,7 +18,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/scale/../../core/lv_obj_style_gen.h:532:24:lv_obj_get_style_text_opa	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/scale/../../core/lv_obj_style_gen.h:538:33:lv_obj_get_style_text_font	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/scale/../../core/lv_obj_style_gen.h:544:23:lv_obj_get_style_text_letter_space	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/scale/lv_scale.c:85:12:lv_scale_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/scale/lv_scale.c:85:12:lv_scale_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/scale/lv_scale.c:105:6:lv_scale_set_mode	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/scale/lv_scale.c:115:6:lv_scale_set_total_tick_count	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/scale/lv_scale.c:125:6:lv_scale_set_major_tick_every	24	static

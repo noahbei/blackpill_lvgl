@@ -20,7 +20,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/textarea/../label/../../core/lv_obj_style_gen.h:538:33:lv_obj_get_style_text_font	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/textarea/../label/../../core/lv_obj_style_gen.h:550:23:lv_obj_get_style_text_line_space	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/textarea/../label/../../core/lv_obj_style_gen.h:610:24:lv_obj_get_style_anim_duration	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/textarea/lv_textarea.c:90:12:lv_textarea_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/textarea/lv_textarea.c:90:12:lv_textarea_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/textarea/lv_textarea.c:102:6:lv_textarea_add_char	64	static
 ../Middlewares/Third_Party/lvgl/src/widgets/textarea/lv_textarea.c:163:6:lv_textarea_add_text	56	static
 ../Middlewares/Third_Party/lvgl/src/widgets/textarea/lv_textarea.c:213:6:lv_textarea_delete_char	56	static

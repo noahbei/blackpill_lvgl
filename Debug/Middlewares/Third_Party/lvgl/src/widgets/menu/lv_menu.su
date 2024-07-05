@@ -1,9 +1,9 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/../../core/../misc/lv_ll.h:85:20:_lv_ll_clear	16	static
-../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:118:12:lv_menu_create	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:126:12:lv_menu_page_create	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:141:12:lv_menu_cont_create	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:149:12:lv_menu_section_create	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:157:12:lv_menu_separator_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:118:12:lv_menu_create	24	static
+../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:126:12:lv_menu_page_create	24	static
+../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:141:12:lv_menu_cont_create	24	static
+../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:149:12:lv_menu_section_create	24	static
+../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:157:12:lv_menu_separator_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:165:6:lv_menu_refr	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:193:6:lv_menu_set_page	40	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:273:6:lv_menu_set_sidebar_page	40	static
@@ -11,7 +11,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:349:6:lv_menu_set_mode_root_back_button	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:361:6:lv_menu_set_load_page_event	40	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:389:6:lv_menu_set_page_title	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:414:6:lv_menu_set_page_title_static	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:414:6:lv_menu_set_page_title_static	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:439:12:lv_menu_get_cur_main_page	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:447:12:lv_menu_get_cur_sidebar_page	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/menu/lv_menu.c:455:12:lv_menu_get_main_header	24	static

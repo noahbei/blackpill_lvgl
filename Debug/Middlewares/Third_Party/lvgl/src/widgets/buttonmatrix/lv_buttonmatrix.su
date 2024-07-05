@@ -13,7 +13,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style_gen.h:634:29:lv_obj_get_style_base_dir	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h:301:23:lv_obj_get_style_space_left	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/../../core/lv_obj_style.h:317:23:lv_obj_get_style_space_top	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c:84:12:lv_buttonmatrix_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c:84:12:lv_buttonmatrix_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c:96:6:lv_buttonmatrix_set_map	120	static
 ../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c:187:6:lv_buttonmatrix_set_ctrl_map	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c:197:6:lv_buttonmatrix_set_selected_button	24	static

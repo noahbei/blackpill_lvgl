@@ -1,6 +1,6 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/calendar/../buttonmatrix/../../core/../misc/../font/../draw/../misc/lv_area.h:352:23:lv_pct	16	static
 ../Middlewares/Third_Party/lvgl/src/widgets/calendar/../buttonmatrix/../../core/../misc/../font/../draw/../stdlib/lv_string.h:65:20:lv_memzero	16	static
-../Middlewares/Third_Party/lvgl/src/widgets/calendar/lv_calendar.c:62:12:lv_calendar_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/calendar/lv_calendar.c:62:12:lv_calendar_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/calendar/lv_calendar.c:74:6:lv_calendar_set_day_names	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/calendar/lv_calendar.c:86:6:lv_calendar_set_today_date	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/calendar/lv_calendar.c:98:6:lv_calendar_set_highlighted_dates	40	static

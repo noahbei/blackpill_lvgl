@@ -460,21 +460,7 @@ void LVGL_Task(void const *argument)
 
 void ui_init(lv_display_t *disp)
 {
-//        lv_obj_t *obj;
-//
-//        /* set screen background to white */
-//        lv_obj_t *scr = lv_screen_active();
-//        lv_obj_set_style_bg_color(scr, lv_color_white(), 0);
-//        lv_obj_set_style_bg_opa(scr, LV_OPA_100, 0);
-//
-//        /* create label */
-//        obj = lv_label_create(scr);
-//        lv_obj_set_align(obj, LV_ALIGN_CENTER);
-//        lv_obj_set_height(obj, LV_SIZE_CONTENT);
-//        lv_obj_set_width(obj, LV_SIZE_CONTENT);
-//        lv_obj_set_style_text_font(obj, &lv_font_montserrat_14, 0);
-//        lv_obj_set_style_text_color(obj, lv_color_black(), 0);
-//        lv_label_set_text(obj, "Hello World!");
+	// modified animation example code
 	lv_example_anim_2();
 }
 /* USER CODE END 4 */

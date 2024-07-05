@@ -1,5 +1,5 @@
-../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:55:12:lv_tileview_create	32	static
-../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:67:12:lv_tileview_add_tile	40	static
+../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:55:12:lv_tileview_create	24	static
+../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:67:12:lv_tileview_add_tile	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:85:6:lv_tileview_set_tile	40	static
 ../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:98:6:lv_tileview_set_tile_by_index	72	static
 ../Middlewares/Third_Party/lvgl/src/widgets/tileview/lv_tileview.c:122:12:lv_tileview_get_tile_active	24	static

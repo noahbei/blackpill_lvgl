@@ -12,7 +12,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/chart/../../../src/core/lv_obj_style_gen.h:325:23:lv_obj_get_style_border_width	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/chart/../../../src/core/lv_obj_style_gen.h:331:32:lv_obj_get_style_border_side	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/chart/../../../src/core/lv_obj_style_gen.h:442:23:lv_obj_get_style_line_width	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/chart/lv_chart.c:67:12:lv_chart_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/chart/lv_chart.c:67:12:lv_chart_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/chart/lv_chart.c:75:6:lv_chart_set_type	40	static
 ../Middlewares/Third_Party/lvgl/src/widgets/chart/lv_chart.c:104:6:lv_chart_set_point_count	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/chart/lv_chart.c:128:6:lv_chart_set_range	40	static

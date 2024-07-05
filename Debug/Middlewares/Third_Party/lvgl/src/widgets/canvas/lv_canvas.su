@@ -1,7 +1,7 @@
 ../Middlewares/Third_Party/lvgl/src/widgets/canvas/../image/../../core/../misc/../font/../draw/../stdlib/lv_string.h:65:20:lv_memzero	16	static
 ../Middlewares/Third_Party/lvgl/src/widgets/canvas/../image/../../core/../misc/../font/../draw/lv_draw_buf.h:238:20:lv_draw_buf_to_image	16	static
 ../Middlewares/Third_Party/lvgl/src/widgets/canvas/../image/../../core/lv_obj_style_gen.h:423:26:lv_obj_get_style_image_recolor	24	static
-../Middlewares/Third_Party/lvgl/src/widgets/canvas/lv_canvas.c:54:12:lv_canvas_create	32	static
+../Middlewares/Third_Party/lvgl/src/widgets/canvas/lv_canvas.c:54:12:lv_canvas_create	24	static
 ../Middlewares/Third_Party/lvgl/src/widgets/canvas/lv_canvas.c:66:6:lv_canvas_set_buffer	64	static
 ../Middlewares/Third_Party/lvgl/src/widgets/canvas/lv_canvas.c:85:6:lv_canvas_set_draw_buf	32	static
 ../Middlewares/Third_Party/lvgl/src/widgets/canvas/lv_canvas.c:102:6:lv_canvas_set_px	64	static

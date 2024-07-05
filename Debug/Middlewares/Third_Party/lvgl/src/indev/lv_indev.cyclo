@@ -59,7 +59,7 @@
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:623:13:indev_pointer_proc	13
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:679:13:indev_keypad_proc	46
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:824:13:indev_encoder_proc	78
-../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1048:13:indev_button_proc	10
+../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1048:13:indev_button_proc	8
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1095:13:indev_proc_press	37
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1238:13:indev_proc_release	22
 ../Middlewares/Third_Party/lvgl/src/indev/lv_indev.c:1317:19:pointer_search_obj	4

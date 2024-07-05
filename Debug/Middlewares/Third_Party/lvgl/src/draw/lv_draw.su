@@ -7,7 +7,7 @@
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:84:18:lv_draw_add_task	32	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:109:6:lv_draw_finalize_task_creation	32	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:153:6:lv_draw_dispatch	24	static
-../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:173:6:lv_draw_dispatch_layer	88	static
+../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:173:6:lv_draw_dispatch_layer	80	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:267:6:lv_draw_dispatch_wait_for_request	4	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:277:6:lv_draw_dispatch_request	4	static
 ../Middlewares/Third_Party/lvgl/src/draw/lv_draw.c:286:18:lv_draw_get_next_available_task	40	static
