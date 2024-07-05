@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "lvgl.h"
 #include "./src/drivers/display/st7735/lv_st7735.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -318,6 +319,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(LCD_CS_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PB1 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
   /*Configure GPIO pin : LCD_RESET_Pin */
   GPIO_InitStruct.Pin = LCD_RESET_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -425,7 +432,7 @@ void LVGL_Task(void const *argument)
 
         /* Create the LVGL display object and the LCD display driver */
         lcd_disp = lv_st7735_create(LCD_H_RES, LCD_V_RES, LV_LCD_FLAG_NONE, lcd_send_cmd, lcd_send_color);
-        lv_display_set_rotation(lcd_disp, LV_DISPLAY_ROTATION_180);
+        lv_display_set_rotation(lcd_disp, LV_DISPLAY_ROTATION_0);
         lv_display_set_offset(lcd_disp, 2, 3);
 
         /* Allocate draw buffers on the heap. In this example we use two partial buffers of 1/10th size of the screen */
@@ -457,11 +464,64 @@ void LVGL_Task(void const *argument)
                 osDelay(10);
         }
 }
+// Define the coordinates that the buttons will interact with
+static const lv_point_t btn_points[] = { {64, 5}, {70, 90} };
+void button_read(lv_indev_t *indev, lv_indev_data_t *data);
+// Create and register the input device
+void input_device_init(void) {
+    lv_indev_t *indev = lv_indev_create();
+    lv_indev_set_type(indev, LV_INDEV_TYPE_BUTTON);
+    lv_indev_set_read_cb(indev, button_read);
+    lv_indev_set_button_points(indev, btn_points);
+}
+// Simulate reading a button press
+int my_btn_read(void) {
+    // Implement your button reading logic here
+    // Return the button ID (0, 1, 2, ...) if pressed, or -1 if no button is pressed
+    // For example:
+    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_SET) return 1; // Button 0 is pressed
+    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == GPIO_PIN_SET) return 2; // Button 1 is pressed
+    return -1; // No button is pressed
+}
 
+void button_read(lv_indev_t *indev, lv_indev_data_t *data) {
+    static uint32_t last_btn = 0;   // Store the last pressed button
+    int btn_pr = my_btn_read();     // Get the ID of the pressed button
+
+    if (btn_pr >= 0) {              // Check if a button is pressed
+        last_btn = btn_pr;          // Save the ID of the pressed button
+        data->state = LV_INDEV_STATE_PRESSED;
+        printf("button is pressed\r\n");
+    } else {
+        data->state = LV_INDEV_STATE_RELEASED;
+    }
+
+    data->btn_id = last_btn;        // Set the last button ID
+}
+
+lv_obj_t * btn;
 void ui_init(lv_display_t *disp)
 {
+//	const lv_point_t points_array[] = { {64,5} };
+//	lv_indev_t * btnInput = lv_indev_create();
+//	lv_indev_set_type(btnInput, LV_INDEV_TYPE_BUTTON);   /*See below.*/
+//	lv_indev_set_button_points(btnInput, points_array);
+//	lv_indev_set_read_cb(btnInput, button_read);  /*See below.*/
+	input_device_init();
 	// modified animation example code
 	lv_example_anim_2();
+	btn = lv_button_create(lv_screen_active());
+	lv_obj_set_align(btn, LV_ALIGN_TOP_MID);
+	lv_obj_set_size(btn, 100, 100);
+	printf("The value of myInteger is: %d\n", lv_obj_get_index(btn));
+	//lv_obj_add_event_cb(btn, my_event_cb, LV_EVENT_CLICKED, NULL);   /*Assign an event callback*/
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+    if (GPIO_Pin == GPIO_PIN_1) {
+        //printf("button pressed\r\n");
+        //btn_pr = 3;
+    }
 }
 /* USER CODE END 4 */
 
