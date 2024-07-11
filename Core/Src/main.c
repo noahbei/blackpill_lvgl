@@ -321,7 +321,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PB1 */
   GPIO_InitStruct.Pin = GPIO_PIN_1;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
@@ -338,6 +338,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(LCD_DCX_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI1_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(EXTI1_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
@@ -467,23 +471,43 @@ void LVGL_Task(void const *argument)
 // Define the coordinates that the buttons will interact with
 static const lv_point_t btn_points[] = { {64, 5}, {70, 90} };
 void button_read(lv_indev_t *indev, lv_indev_data_t *data);
-// Create and register the input device
+
+// Screen objects
+lv_obj_t *screen1;
+lv_obj_t *screen2;
+lv_obj_t *screen3;
+lv_obj_t *screen4;
+lv_obj_t *btn;
+
+lv_obj_t *screens[4]; // Array of screen pointers
+
+// Simulate reading a button press
 void input_device_init(void) {
     lv_indev_t *indev = lv_indev_create();
     lv_indev_set_type(indev, LV_INDEV_TYPE_BUTTON);
     lv_indev_set_read_cb(indev, button_read);
-    lv_indev_set_button_points(indev, btn_points);
 }
+
+uint8_t flag = 0;
 // Simulate reading a button press
 int my_btn_read(void) {
     // Implement your button reading logic here
     // Return the button ID (0, 1, 2, ...) if pressed, or -1 if no button is pressed
-    // For example:
-    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_SET) return 1; // Button 0 is pressed
-    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == GPIO_PIN_SET) return 2; // Button 1 is pressed
+    if (flag == 1) {
+    	flag = 0;
+    	return 0;
+    } // Button 0 is pressed
+    //if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == GPIO_PIN_SET) return 1; // Button 1 is pressed
     return -1; // No button is pressed
 }
 
+// Function to switch screens
+void switch_screen(lv_obj_t *new_screen) {
+    lv_screen_load(new_screen);
+}
+
+uint8_t i = 0;
+// Read the button state
 void button_read(lv_indev_t *indev, lv_indev_data_t *data) {
     static uint32_t last_btn = 0;   // Store the last pressed button
     int btn_pr = my_btn_read();     // Get the ID of the pressed button
@@ -491,7 +515,14 @@ void button_read(lv_indev_t *indev, lv_indev_data_t *data) {
     if (btn_pr >= 0) {              // Check if a button is pressed
         last_btn = btn_pr;          // Save the ID of the pressed button
         data->state = LV_INDEV_STATE_PRESSED;
-        printf("button is pressed\r\n");
+        printf("Button %d is pressed\r\n", last_btn);
+
+        // Switch screens based on button press
+        if (last_btn == 0) {
+            // Load the next screen in the array
+            switch_screen(screens[i]);
+            i = (i + 1) % 4; // Update the index, loop back to 0 after 3
+        }
     } else {
         data->state = LV_INDEV_STATE_RELEASED;
     }
@@ -499,28 +530,49 @@ void button_read(lv_indev_t *indev, lv_indev_data_t *data) {
     data->btn_id = last_btn;        // Set the last button ID
 }
 
-lv_obj_t * btn;
-void ui_init(lv_display_t *disp)
-{
-//	const lv_point_t points_array[] = { {64,5} };
-//	lv_indev_t * btnInput = lv_indev_create();
-//	lv_indev_set_type(btnInput, LV_INDEV_TYPE_BUTTON);   /*See below.*/
-//	lv_indev_set_button_points(btnInput, points_array);
-//	lv_indev_set_read_cb(btnInput, button_read);  /*See below.*/
-	input_device_init();
-	// modified animation example code
-	lv_example_anim_2();
-	btn = lv_button_create(lv_screen_active());
-	lv_obj_set_align(btn, LV_ALIGN_TOP_MID);
-	lv_obj_set_size(btn, 100, 100);
-	printf("The value of myInteger is: %d\n", lv_obj_get_index(btn));
-	//lv_obj_add_event_cb(btn, my_event_cb, LV_EVENT_CLICKED, NULL);   /*Assign an event callback*/
+// Initialize the UI
+void ui_init(lv_display_t *disp) {
+    input_device_init();
+
+    // Create screen 1
+    screen1 = lv_obj_create(NULL);
+    lv_obj_t *label1 = lv_label_create(screen1);
+    lv_label_set_text(label1, "This is Screen 1");
+    lv_obj_align(label1, LV_ALIGN_CENTER, 0, 0);
+
+    // Create screen 2
+    screen2 = lv_obj_create(NULL);
+    lv_obj_t *label2 = lv_label_create(screen2);
+    lv_label_set_text(label2, "This is Screen 2");
+    lv_obj_align(label2, LV_ALIGN_CENTER, 0, 0);
+
+    // Create screen 3
+	screen3 = lv_obj_create(NULL);
+	lv_obj_t *label3 = lv_label_create(screen3);
+	lv_label_set_text(label3, "This is Screen 3");
+	lv_obj_align(label3, LV_ALIGN_CENTER, 0, 0);
+
+	// Create screen 4
+	screen4 = lv_obj_create(NULL);
+	lv_obj_t *label4 = lv_label_create(screen4);
+	lv_label_set_text(label4, "This is Screen 4");
+	lv_obj_align(label4, LV_ALIGN_CENTER, 0, 0);
+
+	screens[0] = screen1;
+	screens[1] = screen2;
+	screens[2] = screen3;
+	screens[3] = screen4;
+    // Load the initial screen
+    lv_screen_load(screen1);
+
+    // Modified animation example code
+    lv_example_anim_2();
 }
+
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if (GPIO_Pin == GPIO_PIN_1) {
-        //printf("button pressed\r\n");
-        //btn_pr = 3;
+        flag = 1;
     }
 }
 /* USER CODE END 4 */
